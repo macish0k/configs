@@ -1,0 +1,15 @@
+[user]
+	name = macish0k
+	email = ivanukas@icloud.com
+[core]
+	autocrlf = input
+	safecrlf = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%Cred%h %ad | %s%d %C(bold blue)[%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -d
+	
