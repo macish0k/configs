@@ -13,6 +13,8 @@ alias nws='networksetup'
 
 alias scan_wifi='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport scan'
 
+alias scan_downloads="sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'select LSQuarantineDataURLString from LSQuarantineEvent'"
+
 alias reset_en0='networksetup -setairportpower en0 off; networksetup -setairportpower en0 on'
 
 # ngp = notify-git-push
@@ -33,7 +35,7 @@ alias xcode='open -a Xcode'
 alias tel='open /Applications/Telegram.app'
 alias adobe='open -a /Applications/Adobe\ Photoshop\ CC\ 2015/Adobe\ Photoshop\ CC\ 2015.app'
 
-# * * * CUSTOMIZATION COLOURS * * *
+# * * * CUSTOMIZATION * * *
 
 export PS1="\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;4m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;160m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \\$ \[$(tput sgr0)\]"
 export PATH="/usr/local/bin:$PATH"
